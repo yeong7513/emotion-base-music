@@ -27,8 +27,8 @@ async def test_extract_keywords():
 
 @pytest.mark.asyncio
 async def test_extract_keywords_with_long_text():
-    """Test extract_keywords function with long text exceeding 300 characters."""
-    test_input = " ".join(["word"] * 100)  # Generate a long text (100 words)
+    """Test extract_keywords function with long text exceeding 500 characters."""
+    test_input = " ".join(["word"] * 150)  # Generate a long text (150 words)
     
     mock_keywords = [("long text", 0.9), ("word repetition", 0.85)]
     with patch.object(emotion_analysis.kw_model, "extract_keywords", return_value=mock_keywords):
