@@ -60,11 +60,11 @@ To use the YouTube API, you'll need an API key from the [Google Developers Conso
    uvicorn app.main:app --reload
    ```
 
-2. Send a POST request to the `/emotion/music-recommendation/` endpoint with the user input text (emotion). The server will return a list of YouTube music recommendations based on the emotion and keywords.
+2. Send a POST request to the `/analyze-emotion/` endpoint with the user input text (emotion). The server will return a list of YouTube music recommendations based on the emotion and keywords.
 
 ## Example Request
 
-**Endpoint**: `/emotion/music-recommendation/`  
+**Endpoint**: `/analyze-emotion/`  
 **Method**: POST  
 **Payload**:
 ```json
@@ -76,15 +76,19 @@ To use the YouTube API, you'll need an API key from the [Google Developers Conso
 ## Example Response
 ```json
 {
-  "recommended_songs": [
+  "youtube": [
     {
-      "title": "Happy - Pharrell Williams",
-      "url": "https://www.youtube.com/watch?v=Y6Sxv-sUYtM"
+      "title": "i am feeling happy now",
+      "url": "https://www.youtube.com/watch?v=YbUZ-gX0Kbo",
+      "thumbnail": "https://i.ytimg.com/vi/YbUZ-gX0Kbo/default.jpg",
+      "video_id": "YbUZ-gX0Kbo"
     },
     {
-      "title": "Don't Stop Me Now - Queen",
-      "url": "https://www.youtube.com/watch?v=HgzGwKwLmgM"
-    }
+      "title": "Feeling Happy Music: Upbeat Morning Music to Energize Your Day with Feeling Happy Tunes",
+      "url": "https://www.youtube.com/watch?v=NYOzWAgfdUc",
+      "thumbnail": "https://i.ytimg.com/vi/NYOzWAgfdUc/default.jpg",
+      "video_id": "NYOzWAgfdUc"
+    },
   ]
 }
 ```
