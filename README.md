@@ -36,12 +36,12 @@ This project provides emotion-based music recommendations by analyzing user inpu
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yeong7513/emotion-base-music.git
+   git clone https://github.com/yeong7513/emotion-base-music-fastapi.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd emotion-base-music
+   cd emotion-base-music-fastapi
    ```
 
 3. Install the required dependencies:
