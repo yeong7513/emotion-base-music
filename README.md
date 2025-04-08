@@ -36,12 +36,12 @@ This project provides emotion-based music recommendations by analyzing user inpu
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yeong7513/emotion-base-music-fastapi.git
+   git clone https://github.com/yeong7513/emotion-base-music.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd emotion-base-music-fastapi
+   cd emotion-base-music
    ```
 
 3. Install the required dependencies:
@@ -95,4 +95,4 @@ To use the YouTube API, you'll need an API key from the [Google Developers Conso
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License © 2025 – Yeongchae Kim
